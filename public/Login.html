@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Animation pour le formulaire */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-400 to-purple-500 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full fade-in-up">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Connexion</h1>
+        <form method="post" action="../src/php/login.php">
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-medium">Email:</label>
+                <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300" required>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 text-sm font-medium">Mot de passe:</label>
+                <input type="password" id="password" name="password" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300" required>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300 focus:outline-none">Se connecter</button>
+        </form>
+        <p class="text-center text-gray-600 mt-4">
+            <a href="#" class="text-blue-500 hover:underline">Mot de passe oublié ?</a>
+        </p>
+    </div>
+
+</body>
+</html>

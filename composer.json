@@ -1,0 +1,9 @@
+{
+    "name": "stock_management/project",
+    "description": "Application de gestion de stock",
+    "require": {
+        "php": ">=7.4",
+        "ext-mysqli": "*",
+        "tecnickcom/tcpdf": "^6.7"
+    }
+}
